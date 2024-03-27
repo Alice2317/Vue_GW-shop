@@ -1,0 +1,51 @@
+.card1 {
+  .card-img {
+    object-fit: cover;
+  }
+
+  .card-title {
+    font-size: 96px;
+    font-weight: 900;
+    margin-bottom: 24px;
+    position: relative;
+
+    @include mobile() {
+      font-size: 24px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: calc(100% / 4);
+      height: 15px;
+      background: map-get($theme-colors, "secondary");
+
+      @include tablet() {
+        height: 1px;
+      }
+    }
+  }
+
+  .card-text {
+    font-size: 32px;
+
+    @include mobile() {
+      font-size: 16px;
+    }
+  }
+}
+
+.card2 {
+  .card-img-overlay {
+    opacity: 0.8;
+  }
+
+  &:hover {
+    .card-img-top {
+      transform: scale(1.1);
+      transition: 1s;
+    }
+  }
+}

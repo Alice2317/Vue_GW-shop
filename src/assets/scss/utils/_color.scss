@@ -1,0 +1,51 @@
+@each $color, $value in $theme-colors {
+  .bg-left-#{$color} {
+    background-image: linear-gradient(to right, $value 50%, transparent 50%);
+
+    @include tablet() {
+      background-image: linear-gradient(to right, $value 100%, transparent 0%);
+    }
+  }
+
+  .bg-right-#{$color} {
+    background-image: linear-gradient(to left, $value 50%, transparent 50%);
+
+    @include tablet() {
+      background-image: linear-gradient(to left, $value 100%, transparent 0%);
+    }
+  }
+
+  .bg-bottom-#{$color} {
+    background-image: linear-gradient(to top, $value, transparent);
+  }
+}
+
+.bg-body {
+  background: $body-bg;
+}
+
+@mixin img($url, $repeat, $position, $cover) {
+  background-image: url($url);
+  background-repeat: $repeat;
+  background-position: $position;
+  background-size: $cover;
+}
+
+.bg-right {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: url("https://images.unsplash.com/photo-1491183672482-d0af0e44929d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    opacity: 0.3;
+  }
+}

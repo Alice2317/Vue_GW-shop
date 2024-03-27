@@ -1,0 +1,37 @@
+@each $color, $value in $theme-colors {
+  .scrollBar-#{$color} {
+    &::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba($value, 0.2);
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: $value;
+    }
+  }
+}
+
+.scrollBar-transparent {
+  &::-webkit-scrollbar {
+    height: 0;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: transparent;
+  }
+}

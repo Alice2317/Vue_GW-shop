@@ -1,0 +1,49 @@
+.has-aside-layout {
+  padding-left: 197px;
+
+  @include tablet() {
+    padding-left: 0;
+  }
+}
+
+.aside {
+  width: 197px;
+  height: calc(100vh - 49px);
+  padding: 24px;
+  margin-top: 49px;
+  border-right: 2px solid map-get($theme-colors, "primary");
+  position: fixed;
+  left: 0;
+  z-index: 999;
+
+  @include tablet() {
+    position: initial;
+    display: flex;
+    height: initial;
+    border-right: 0;
+    width: 100%;
+    padding: 12px;
+    border-bottom: 2px solid map-get($theme-colors, "primary");
+  }
+
+  .aside-title {
+    font-weight: bold;
+    font-size: 32px;
+    position: relative;
+    color: map-get($theme-colors, "primary");
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -15px;
+      width: calc(100% / 4);
+      height: 15px;
+      background: map-get($theme-colors, "secondary");
+
+      @include tablet() {
+        display: none;
+      }
+    }
+  }
+}

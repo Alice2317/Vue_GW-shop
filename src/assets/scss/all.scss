@@ -1,0 +1,29 @@
+//google font family & google icon
+@import "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Philosopher:wght@700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200";
+
+@import "bootstrap/scss/functions";
+@import "swiper/css/bundle";
+
+@import "./base/base";
+@import "./base/variables";
+@import "./utils/media";
+@import "./utils/box";
+@import "./utils/text";
+@import "./utils/color";
+@import "./utils/input";
+
+@import "./layout/header";
+@import "./layout/aside";
+@import "./layout/main";
+
+@import "./components/scrollbar";
+@import "./components/nav";
+@import "./components/card";
+@import "./components/btn";
+@import "./components/tab";
+
+@import "./ventor/swiper";
+@import "./ventor/loading";
+
+@import "bootstrap/scss/bootstrap";

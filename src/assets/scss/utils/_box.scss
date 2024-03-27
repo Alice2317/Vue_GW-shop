@@ -1,0 +1,23 @@
+@for $i from 1 through 1200 {
+  .max-width-#{$i} {
+    max-width: #{$i}px;
+  }
+
+  .min-width-#{$i} {
+    min-width: #{$i}px;
+  }
+
+  .max-height-#{$i} {
+    max-height: #{$i}px;
+  }
+}
+
+@for $i from 25 through 100 {
+  .max-w-#{$i} {
+    max-width: #{$i}+'%';
+
+    @include tablet() {
+      max-width:100%;
+    }
+  }
+}

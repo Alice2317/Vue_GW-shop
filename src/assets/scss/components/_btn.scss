@@ -1,0 +1,15 @@
+.btn-secondary {
+  border: 2px solid map-get($theme-colors, "dark") !important;
+
+  &:hover {
+    background: map-get($theme-colors, "primary") !important;
+    color: map-get($theme-colors, "light") !important;
+  }
+}
+
+.btn-search {
+  z-index: 999 !important;
+  button {
+    border-radius: 15px 15px 0 15px !important;
+  }
+}
