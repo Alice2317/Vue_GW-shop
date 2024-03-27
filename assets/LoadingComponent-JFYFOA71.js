@@ -1,0 +1,1 @@
+import{_ as a,r as t,o as n,c,w as i,e as o}from"./index-rs7BpDvm.js";const r={props:["isLoading"]},d=o("div",{class:"loading-box"},[o("h1",{class:"ff-serif loading-text m-0"},"GW")],-1);function _(p,f,e,l,g,m){const s=t("VLoading");return n(),c(s,{active:e.isLoading,"is-full-page":!0},{default:i(()=>[d]),_:1},8,["active"])}const x=a(r,[["render",_]]);export{x as L};
