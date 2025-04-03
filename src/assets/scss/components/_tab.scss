@@ -1,0 +1,11 @@
+.tab-content1 {
+  width: 50%;
+
+  @include tablet() {
+    width: 75%;
+  }
+
+  @include mobile() {
+    width: 100%;
+  }
+}

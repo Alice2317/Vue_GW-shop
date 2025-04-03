@@ -1,0 +1,52 @@
+$theme: (light: (body-bg: #e8e3db),
+  dark: (body-bg: #3f3f3f));
+
+[data-theme="light"],
+:root:not([data-theme]) {
+
+  @each $key,
+  $value in map-get($theme, light) {
+    --#{$key}: #{$value};
+  }
+}
+
+[data-theme="dark"] {
+
+  @each $key,
+  $value in map-get($theme, dark) {
+    --#{$key}: #{$value};
+  }
+
+  h1:not(.card *, .menu *, .qa-title, .qa-title *, .offcanvas *),
+  h2:not(.card *, .menu *, .qa-title, .qa-title *, .offcanvas *),
+  h3:not(.card *, .menu *, .qa-title, .qa-title *, .offcanvas *),
+  h4:not(.card *, .menu *, .qa-title, .qa-title *, .offcanvas *),
+  h5:not(.card *, .menu *, .qa-title, .qa-title *, .offcanvas *),
+  h6:not(.card *, .menu *, .qa-title, .qa-title *, .offcanvas *),
+  p:not(.card *, .menu *, .qa-title, .qa-title *, .offcanvas *),
+  span:not(.card *, .menu *, .qa-title, .qa-title *, .offcanvas *),
+  a:not(.card *, .menu *, .qa-title, .qa-title *, .offcanvas *),
+  button:not(.card *, .menu *, .qa-title, .qa-title *, .offcanvas *),
+  li,
+  label {
+    color: white !important;
+  }
+
+  span.bg-primary,
+  .progress {
+    background-color: white !important;
+  }
+
+  hr,
+  .list-group-item,
+  .navbar,
+  .loading-box::after,
+  .loading-box::before {
+    border-color: white !important;
+  }
+}
+
+body,
+.bg-body {
+  background-color: var(--body-bg) !important;
+}

@@ -1,0 +1,25 @@
+@each $size in $sizes-px {
+  .max-width-#{ $size} {
+    max-width: #{ $size}px;
+  }
+
+  .min-width-#{ $size} {
+    min-width: #{ $size}px;
+  }
+
+  .width-#{ $size} {
+    width: #{ $size}px;
+  }
+
+  .height-#{ $size} {
+    height: #{ $size}px;
+  }
+
+  .max-height-#{ $size} {
+    max-height: #{ $size}px;
+  }
+
+  .min-height-#{ $size} {
+    min-height: #{ $size}px;
+  }
+}
