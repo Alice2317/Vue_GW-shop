@@ -1,8 +1,8 @@
 # GW 服飾商城-前台
 
-GitHub:https://github.com/Alice2317/Vue_GW2-shop
+GitHub:https://github.com/Alice2317/Vue_GW-shop
 
-GitPage:https://alice2317.github.io/Vue_GW2-shop/
+GitPage:https://alice2317.github.io/Vue_GW-shop/
 
 ### 技術
 
