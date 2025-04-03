@@ -1,0 +1,1 @@
+import{_ as a,e as t,f as n,g as i,i as c,m as o}from"./index-Ooy_6cGs.js";const r={props:["isLoading"]},d=o("div",{class:"loading-box"},[o("h1",{class:"ff-serif loading-text m-0"},"GW")],-1);function _(p,f,e,l,g,m){const s=t("VLoading");return n(),i(s,{active:e.isLoading,"is-full-page":!0},{default:c(()=>[d]),_:1},8,["active"])}const x=a(r,[["render",_]]);export{x as L};

@@ -1,0 +1,1 @@
+import{_ as t,f as o,j as s,m as e}from"./index-Ooy_6cGs.js";const n={mounted(){setTimeout(()=>this.$router.push("/"),3e3)}},a={class:"has-header-layout"},c=e("section",{class:"section-layout container py-40 py-lg-80"},[e("h1",null,"404"),e("p",null,"找不到頁面，正在跳轉至首頁")],-1),r=[c];function _(i,l,u,p,d,h){return o(),s("main",a,r)}const f=t(n,[["render",_]]);export{f as default};
